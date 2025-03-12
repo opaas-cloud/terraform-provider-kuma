@@ -60,7 +60,7 @@ func (r *monitorResource) Metadata(_ context.Context, req resource.MetadataReque
 func (r *monitorResource) Schema(_ context.Context, _ resource.SchemaRequest, resp *resource.SchemaResponse) {
 	resp.Schema = schema.Schema{
 		Attributes: map[string]schema.Attribute{
-			"id": schema.StringAttribute{
+			"id": schema.NumberAttribute{
 				Computed: true,
 			},
 			"project": schema.StringAttribute{
