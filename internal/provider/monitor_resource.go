@@ -63,7 +63,7 @@ func (r *monitorResource) Schema(_ context.Context, _ resource.SchemaRequest, re
 			"id": schema.NumberAttribute{
 				Computed: true,
 			},
-			"project": schema.StringAttribute{
+			"url": schema.StringAttribute{
 				Required: true,
 			},
 		},
@@ -81,7 +81,7 @@ func (r *monitorResource) Create(ctx context.Context, req resource.CreateRequest
 	}
 
 	var monitor = tools.KumaMonitorJsonModel{
-		Project: plan.Project.ValueString(),
+		URL: plan.URL.ValueString(),
 	}
 
 	out, err := json.Marshal(monitor)

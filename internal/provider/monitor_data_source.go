@@ -55,7 +55,7 @@ func (d *monitorDataSource) Schema(_ context.Context, _ datasource.SchemaRequest
 			"id": schema.NumberAttribute{
 				Computed: true,
 			},
-			"project": schema.StringAttribute{
+			"url": schema.StringAttribute{
 				Required: true,
 			},
 		},

@@ -9,11 +9,11 @@ type KumaClient struct {
 }
 
 type KumaMonitorModel struct {
-	ID      types.Number `tfsdk:"id"`
-	Project types.String `tfsdk:"project"`
+	ID  types.Number `tfsdk:"id"`
+	URL types.String `tfsdk:"url"`
 }
 
 type KumaMonitorJsonModel struct {
-	ID      int    `json:"id"`
-	Project string `json:"project"`
+	ID  int    `json:"id"`
+	URL string `json:"url"`
 }
